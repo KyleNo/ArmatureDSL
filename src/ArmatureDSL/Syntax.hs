@@ -42,7 +42,7 @@ connect :: Joint -> Bone -> Connection
 connect = Connect
 
 (-+-) :: Bone -> Bone -> Bone
-a -+- b = combineBones a b
+(-+-) = combineBones
 infixr 5 -+-
 
 (+..) :: Bone -> Bone -> Bone

@@ -4,8 +4,8 @@ import ArmatureDSL
 
 leaf = unit
 
-lj = joint (zrot (-20) @@ yrot 45)
-rj = joint (zrot 20 @@ yrot (-45))
+lj = joint (zrot (-20) @@ xrot 45)
+rj = joint (zrot 20 @@ xrot (-45))
 
 n1 = bone 1 +> [lj .-> leaf, rj .-> leaf]
 

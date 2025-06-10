@@ -1,5 +1,3 @@
-{-# LANGUAGE OverloadedStrings #-}
-
 module ArmatureDSL.Base where
 
 import Linear hiding (angle, rotate)
@@ -9,7 +7,6 @@ import qualified Prelude (pi)
 -- Types
 
 type Length = Double
--- type Pos    = (Double, Double, Double)
 type Pos    = V3 Double
 type Mat3   = M33 Double
 -- in degrees
